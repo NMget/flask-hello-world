@@ -1,0 +1,37 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{ super() }}
+{% endblock %}
+
+{% block title %}
+{{ Titre }}
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+<nav>
+    <ul>
+        <li class="menu-deroulant">
+            <a href="{{url_for('profil')}}">Profil</a>
+            <ul class="sous-menu">
+                <li><a href="{{url_for('sio')}}">BTS SIO</a></li>
+                <li><a href="{{url_for('DGFiP')}}">DGFiP</a></li>
+            </ul>
+        </li>
+        <li class="menu-deroulant">
+            <a href="{{url_for('projets')}}">Projets</a>
+            <ul class="sous-menu">
+                <li><a href="#">Gestionnaire de Championnat</a></li>
+                <li><a href="#">Portefolio</a></li>
+            </ul>
+        </li>
+        <li><a href="{{url_for('veille')}}">Veille Technologique</a></li>
+        <li><a href="{{url_for('contact')}}">Me contacter</a></li>
+    </ul>
+</nav>
+{% include Content %}
+
+
+
+{% endblock %}
