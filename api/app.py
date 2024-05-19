@@ -55,12 +55,13 @@ def veille():
 
 @app.route('/contact')
 def contact():
-
-
-
     Titre="contact"
     Content="contact.html"
     return render_template('bone.html', Titre=Titre, Content=Content)
+
+@app.route('/gang')
+def gang():
+    return render_template('projectz.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
