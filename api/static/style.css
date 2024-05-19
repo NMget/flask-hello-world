@@ -127,7 +127,7 @@ nav > ul > li:hover > a{
   }
 
 body{
-  background: url(/static/assets/wallpaper.jpg) no-repeat center center fixed; 
+  background: rgb(24, 24, 24);  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -198,11 +198,17 @@ h2{
 }
 
 .diplome{
-  border: #ffc400 solid 5px;
   border-radius: 10%;
   margin: 2%;
   flex: auto;
 }
+
+.diplome:hover{
+  box-shadow: #ffc400 0 0 30px;
+  
+}
+
+
 
 .diplomes > div{
   height: 250px;
@@ -235,3 +241,6 @@ h2{
   display: grid;
 }
 
+nav ul li img{
+  height: 50px;
+}
