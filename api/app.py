@@ -41,11 +41,7 @@ def DGFiP():
     Content = 'DGFiP.html'
     return render_template('bone.html', Titre=Titre, Content=Content)
 
-@app.route('/projets')
-def projets():
-    Titre='Projets'
-    Content = 'projets.html'
-    return render_template('bone.html', Titre=Titre, Content=Content)
+
 
 @app.route('/veille')
 def veille():
@@ -55,13 +51,27 @@ def veille():
 
 @app.route('/contact')
 def contact():
-    Titre="contact"
+    Titre="Contact"
     Content="contact.html"
     return render_template('bone.html', Titre=Titre, Content=Content)
 
-@app.route('/gang')
-def gang():
-    return render_template('projectz.html')
+@app.route('/realisations')
+def realisations():
+    Titre="Mes réalisations"
+    Content="realisations.html"
+    return render_template('bone.html', Titre=Titre, Content=Content)
+
+@app.route('/gest-champ')
+def gestchamp():
+    Titre='Gestionnaire de championnat'
+    Content='gest-champ.html'
+    return render_template('bone.html', Titre=Titre, Content=Content)
+
+@app.route('/simul-match')
+def simulmatch():
+    Titre='Simulateur de match'
+    Content='simul-match.html'
+    return render_template('bone.html', Titre=Titre, Content=Content)
 
 if __name__ == '__main__':
     app.run(debug=True)
