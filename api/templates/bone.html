@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 <nav>
     <ul>
+        <li><a href="{{url_for('index')}}"><img src="/static/assets/N.png" alt=""></a></li>
         <li class="menu-deroulant">
             <a href="{{url_for('profil')}}">Profil</a>
             <ul class="sous-menu">
@@ -20,10 +21,10 @@
             </ul>
         </li>
         <li class="menu-deroulant">
-            <a href="{{url_for('projets')}}">Projets</a>
+            <a href="{{url_for('realisations')}}">Réalisations</a>
             <ul class="sous-menu">
-                <li><a href="#">Gestionnaire de Championnat</a></li>
-                <li><a href="#">Portefolio</a></li>
+                <li><a href="{{url_for('gestchamp')}}">Gestionnaire de Championnat</a></li>
+                <li><a href="{{url_for('simulmatch')}}">Simulateur de Match</a></li>
             </ul>
         </li>
         <li><a href="{{url_for('veille')}}">Veille Technologique</a></li>
