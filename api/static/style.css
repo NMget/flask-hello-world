@@ -169,7 +169,9 @@ h2{
   margin-left: 20%;
   margin-right: 20%;
 }
-
+.gang h2, h3{
+  margin-top: 5%;
+}
 .gang h1{
   color: var(--color3);
   text-align: center;
@@ -194,7 +196,11 @@ h2{
 .gang p{
   color:  var(--color3);
   text-align: justify;
-  margin-bottom: 7%;
+}
+
+.gang ul{
+  color: var(--color3);
+  margin-left: 4%;
 }
 
 .diplome{
@@ -244,3 +250,4 @@ h2{
 nav ul li img{
   height: 50px;
 }
+
