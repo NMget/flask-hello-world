@@ -204,7 +204,7 @@ h2{
 }
 
 .diplome{
-  border-radius: 10%;
+  border-radius: .25rem;
   margin: 2%;
   flex: auto;
 }
