@@ -41,6 +41,12 @@ def DGFiP():
     Content = 'DGFiP.html'
     return render_template('bone.html', Titre=Titre, Content=Content)
 
+@app.route('/CPAM')
+def DGFiP():
+    Titre='CPAM'
+    Content = 'CPAM.html'
+    return render_template('bone.html', Titre=Titre, Content=Content)
+
 
 
 @app.route('/veille')
